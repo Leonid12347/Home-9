@@ -1,0 +1,53 @@
+p {
+  margin: 0;
+  padding: 10px;
+
+  text-align: center;
+  color: aliceblue;
+}
+
+
+.block {
+  padding: 3rem;
+
+  background-color: blue;
+}
+
+.block__element {
+  position: relative;
+  
+  width: 90px;
+  height: 40px;
+
+  
+
+  background-color:#454342 ;
+
+
+  border-top: 3px solid #f17908;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  animation: element-animation 2s ease-in-out infinite 2s forwards;
+}
+
+@keyframes element-animation {
+  0%, 100% {
+    transform: 0;
+  }
+
+  5%, 15%, 25%, 35% {
+    transform: rotate(-5deg);
+  }
+
+  10%, 20%, 30% {
+    transform: rotate(5deg);
+  }
+
+  40% {
+    transform: rotate(0deg);
+  }
+}
